@@ -1,0 +1,312 @@
+*body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+ /* Mengatur margin dan padding agar jarak antara elemen lebih rapat */
+#Home {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: auto; /* Mengurangi jarak bawah antara Home dan Menu */
+    justify-content: flex-start; /* Menjaga konten berada di sebelah kiri */
+    margin-top: 10%;
+}
+#Home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 18px;
+    text-align: left !important; /* Mengatur teks agar berada di sebelah kiri */
+    padding-right: 65%; /* Memberikan jarak dari sisi kiri */
+    
+    color: white; /* Mengatur warna teks menjadi putih agar kontras dengan background */
+}
+
+#Home p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left !important; /* Mengatur teks agar berada di sebelah kiri */
+    padding-right: 55%; /* Memberikan jarak dari sisi kiri */
+    padding-bottom: 50px;
+    text-overflow: hidden; 
+    margin: 20px auto 0;
+    line-height: 1;
+    color: white; /* Mengatur warna teks menjadi putih agar kontras dengan background */
+}
+
+#Home a {
+font-size: 1rem;
+    font-weight: bold;
+    text-align: left !important; /* Mengatur teks agar berada di sebelah kiri */
+    padding-right: 20%; /* Memberikan jarak dari sisi kiri */
+    color: white; /* Mengatur warna teks menjadi putih agar kontras dengan background */
+}
+
+
+
+#Home h1 span{
+    color: darkorange;
+    font-size: 200%;
+}
+
+
+/*bagian menu*/
+#Home, #Menu {
+    margin: 0;
+    padding: 0;
+}
+#Menu {
+     background-color:black;
+    padding-top: 0; /* Mengurangi jarak atas Menu */
+    padding-bottom: 0; /* Mengurangi jarak bawah Menu */
+   
+}
+
+/* Mengurangi jarak antara gambar dan elemen di bawahnya */
+#Menu .text-center img {
+    margin-bottom: 20px;
+}
+
+/* Mengatur jarak antara setiap card menu */
+#Menu .card {
+    margin-bottom: 15px; /* Mengurangi jarak antar card menu */
+}
+
+
+/* Menata Heading di dalam section #Menu */
+#Menu h2 {
+    font-size: 2.5rem; /* Ukuran font untuk judul menu */
+    font-weight: bold;
+    color:darkorange; /* Warna teks gelap untuk kontras */
+    text-transform: uppercase; /* Membuat huruf kapital semua */
+    letter-spacing: 2px; /* Menambah jarak antar huruf */
+}
+
+/* Menata Kolom untuk Menu */
+#Menu .card {
+    border: none; /* Menghilangkan border default */
+    border-radius: 10px; /* Membuat sudut kartu lebih melengkung */
+    overflow: hidden; /* Menghindari elemen keluar dari kartu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada kartu */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Menambahkan efek transisi */
+}
+
+/* Efek saat hover pada kartu menu */
+#Menu .card:hover {
+    transform: translateY(-5px); /* Kartu sedikit terangkat saat di-hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Bayangan lebih dalam saat hover */
+}
+
+/* Menata gambar pada kartu menu */
+#Menu .card-img-top {
+    height: 200px; /* Menetapkan tinggi gambar tetap */
+    object-fit: cover; /* Memastikan gambar menutupi seluruh area tanpa distorsi */
+    transition: transform 0.3s ease-in-out; /* Efek transisi gambar */
+}
+
+/* Efek saat hover pada gambar */
+#Menu .card:hover .card-img-top {
+    transform: scale(1.05); /* Memperbesar gambar sedikit saat hover */
+}
+
+/* Menata bagian teks dalam card */
+#Menu .card-body {
+    padding: 20px;
+    background-color:darkorange;
+}
+
+/* Menata judul dan deskripsi di dalam card */
+#Menu .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black;
+}
+
+#Menu .card-text {
+    font-size: 1.2rem;
+    color:white;
+    margin-bottom: 10px;
+}
+
+/* Menata tombol pesan */
+#Menu .btn {
+    background-color: black; /* Warna latar belakang tombol */
+    color:white; /* Warna teks tombol */
+    font-size: 1rem;
+    padding: 10px 20px; /* Memberikan padding yang cukup pada tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: background-color 0.3s ease; /* Efek transisi pada hover */
+}
+
+/* Efek saat hover pada tombol */
+#Menu .btn:hover {
+    background-color: #ff7b00; /* Mengubah warna tombol saat hover */
+}
+
+/* Menata kolom menu */
+#Menu .col-md-4 {
+    margin-bottom: 30px; /* Memberikan jarak antar kolom */
+}
+
+/* Menata responsive untuk tampilan mobile */
+@media (max-width: 768px) {
+    #Menu h2 {
+        font-size: 2rem; /* Mengurangi ukuran font pada layar kecil */
+    }
+}
+
+
+
+
+/*bagian peta*/
+
+#map {
+    color:#ff6200;     
+    height: 500px; /* Menurunkan tinggi agar tidak terlalu besar, bisa disesuaikan */
+    width: 90%; /* Lebar peta lebih besar dari sebelumnya */
+    max-width: 900px; /* Maksimum lebar 1000px agar tetap terkontrol di layar besar */
+    margin: 60px auto; /* Memberikan jarak atas dan memusatkan peta */
+    border: 5px solid #333; /* Garis pinggir dengan warna gelap */
+    border-radius: 10px; /* Sudut garis pinggir melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk tampilan lebih elegan */
+}
+
+
+/*detail*/ 
+/* General Section Styling */
+#detail {
+    background-color: black /* Soft gray background for the section */
+}
+
+
+#detail h2 {
+    color: darkorange; /* Dark text for the heading */
+    font-weight: 700; /* Bold font */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#detail .container {
+    max-width: 960px; /* Center the content */
+}
+
+/* Card Styling */
+#detail .p-5 {
+    background-color: darkorange; /* White card background */
+    border: 1px solid darkorange; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#detail h4 {
+    color: #000000; /* Darker gray for subsection headings */
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#detail p {
+    color: #ffffff; /* Muted gray for paragraph text */
+    line-height: 1.6;
+}
+
+/* Button Styling */
+#detail .btn {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease;
+    text-transform: uppercase; /* Capitalize text */
+}
+
+#detail .btn:hover {
+    background-color: #343a40; /* Slightly lighter black for hover effect */
+    color: #fcf8f8; /* Maintain white text */
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    #detail h2 {
+        font-size: 1.75rem; /* Smaller heading on mobile */
+    }
+
+    #detail .p-5 {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+    }
+
+    #detail .btn {
+        width: 100%; /* Full-width button on smaller screens */
+        padding: 1rem;
+    }
+}
+
+
+/*footer*/
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: #ff6200;
+        }
+
+        
+
+
+/*bagian contact*/
+        .contact-card {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                background-color: whitesmoke;
+                border-radius: 8px;
+                box-shadow: darkorange;
+                margin-bottom: 10px;
+                transition: background-color 0.3s;
+            }
+
+            .contact-card i {
+                font-size: 2rem;
+                margin-right: 15px;
+            }
+
+            /* Warna ikon WhatsApp */
+            .contact-card .fab.fa-whatsapp {
+                color: #25D366;
+                /* Warna hijau khas WhatsApp */
+            }
+
+            /* Warna ikon Instagram */
+            .contact-card .fab.fa-instagram {
+                color: #E1306C;
+                /* Warna ungu khas Instagram */
+            }
+
+            /* Warna ikon Email */
+            .contact-card .fas.fa-envelope {
+                color: #007BFF;
+                /* Warna biru khas Email */
+            }
+
+            /* Warna ikon Facebook */
+            .contact-card .fab.fa-facebook {
+                color: #1877F2;
+                /* Warna biru khas Facebook */
+            }
+
+
+            .contact-card a {
+                color: white;
+                font-weight: 500;
+                text-decoration: none;
+            }
+
+            .contact-card:hover {
+                background-color: #ff6200;
+            }

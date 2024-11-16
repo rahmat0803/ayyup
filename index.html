@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Mie Jebew</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CDN Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+
+    </style>
+    <nav style="background-color: darkorange" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a id="moving-text" style="color: white" class="navbar-brand" href="#">MIE JEBEW</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#Menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#detail">Detail</a>
+                    <li class="nav-item">
+                        <a style="color: white;" href="#map" class="nav-link">Peta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+
+
+
+    <section id="Home" class="py-0 "> <!-- Mengurangi padding atas dan bawah -->
+        <div class="container">
+            <h1 class="text-center mb-4">Selamat Datang Di <span>MIE JEBEW</span></h1>
+            <p class="text-center mb-4">Nikmati sensasi luar biasa dari Mie Jebew dengan berbagai level pedas yang
+                diracik
+                khusus untuk memanjakan selera Anda, mulai
+                dari pedas lembut yang menghangatkan hingga tingkat kepedasan ekstrem yang akan membuat lidah Anda
+                menari dengan rasa
+                yang menggugah, memacu adrenalin, dan meninggalkan kenangan tak terlupakan di setiap gigitan!</p>
+            <a href="#map" class="w-100 btn btn-lg"></a>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!--BAGIAN MENU -->
+    <section id="Menu" class="py-2"> <!-- Mengurangi padding atas dan bawah -->
+        <div class="container">
+            <h2 class="text-center mb-4">Daftar Menu</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="./menu1.jpg" class="card-img-top" alt="nama menu">
+                        <div class="card-body">
+                            <h5 class="card-title">Mie Jebew level 1</h5>
+                            <p class="card-text">mie dengan level kepedan normal</p>
+                            <p class="card-text fw-bold">Harga: Rp 10.000</p>
+                            <a href="#map" class="btn btn-primary" style="background-color: black;">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="./menu1.jpg" class="card-img-top" alt="nama menu">
+                        <div class="card-body">
+                            <h5 class="card-title">Mie jebew level 2</h5>
+                            <p class="card-text">mie dengan level kepedasan sedang.</p>
+                            <p class="card-text fw-bold">Harga: Rp 12.000</p>
+                            <a href="#map" class="btn btn-primary" style="background-color: black;">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="./menu1.jpg" class="card-img-top" alt="nama menu">
+                        <div class="card-body">
+                            <h5 class="card-title">Mie jebew level 3</h5>
+                            <p class="card-text">Mie dengan level kepedasan pedas bingit .</p>
+                            <p class="card-text fw-bold">Harga: Rp 15.000</p>
+                            <a href="#map" class="btn btn-primary" style="background-color: black;">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="detail" class="py-5 ">
+        <div class="container">
+            <h2 class="text-center mb-4">Detail</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 mb-4">
+                    <div class="p-5 border rounded shadow-sm bg-darkorange">
+                        <h4>Alamat</h4>
+                        <p></p>
+                        <p>"Jl. Jend. Ahmad Yani No.45, Benteng, Kec. Benteng, Kab. Kepulauan Selayar, Sulawesi Selatan
+                            92812",</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <div class="p-5 border rounded shadow-sm bg-darkorange">
+                        <h4>Jam Operasi</h4>
+                        <p>
+                            <strong>Senin - Jumat:</strong>
+                            10:00 - 22:00
+                        </p>
+                        <p>
+                            <strong>Sabtu - Minggu:</strong>
+                            09:00 - 23:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <br><br>
+
+        <!--konten peta -->
+
+        <div id="map" style="height: 500px; margin-top: 60;"></div>
+
+
+
+        <!-- Konten Utama -->
+        <div id="kontak" class="d-flex flex-column align-items-center justify-content-center p-6">
+            <h2 class="text-center text-darkorange ">Hubungi Kami</h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                    <!-- Card Kontak WhatsApp -->
+                    <div class="col">
+                        <div class="contact-card">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/6285342628713" target="_blank" style="color: #000000;">
+                                +6285 4262 8713</a>
+
+                        </div>
+                    </div>
+
+                    <!-- Card Kontak Email -->
+                    <div class="col">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ay@gmail.com" style="color:#000000;">ay@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Card Media Sosial Instagram -->
+                    <div class="col">
+                        <div class="contact-card">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/ayuputry_" target="_blank"
+                                style="color: #000000;">ayuputry_____</a>
+                        </div>
+                    </div>
+
+                    <!-- Card Media Sosial Facebook -->
+                    <div class="col">
+                        <div class="contact-card">
+                            <i class="fab fa-facebook"></i>
+                            <a href="https://www.facebook.com//" target="_blank" style="color: #000000;">ay</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="text-center text-lg-start  ">
+        <div class="text-center p-2">
+            <p style="color: white;">&copy; ayyup 2024</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
